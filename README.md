@@ -41,7 +41,7 @@
 
 4. **Access WordPress and Flask Services:**
    - Once the containers are running, open your web browser and navigate to:
-      - WordPress: `http://localhost:8000` (or the port specified in your `docker-compose.yaml`)
+      - WordPress: `http://localhost:8030` (or the port specified in your `docker-compose.yaml`)
       - Flask API: `http://localhost:5000` (or the port specified in your `docker-compose.yaml` for Flask)
 
 5. **Testing the Integration:**
@@ -66,15 +66,11 @@ This setup will ensure your Flask API and WordPress services are properly connec
 
   <h2>Usage</h2>
 
-  <p>The RAG-based Local Language Model can be used for various natural language processing tasks, such as text completion, question answering, and content generation. Customize the <code>app.py</code> script according to your specific use case.</p>
+  <p>Clone the repository, set up Docker containers, and navigate to the WordPress page with the sentiment analysis form. Enter text, and the Flask API will analyze the sentiment, displaying the result and confidence score directly on the page.</p>
 
   <h2>User Interface</h2>
 
-  <p>The user interface (UI) for this project is based on Streamlit, providing a simple and interactive way to interact with the RAG-based Local Language Model.</p>
-
-  <h2>License</h2>
-
-  <p>This project is licensed under the <a href="LICENSE">MIT License</a>.</p>
+  <p>The WordPress page features a simple form where users can input text for sentiment analysis. Upon submitting, the Flask API processes the input and returns the sentiment (positive/negative) along with the confidence score, which is displayed below the form for the user's reference.</p>
 
   
 
