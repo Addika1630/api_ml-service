@@ -10,7 +10,7 @@
 
   <h2>Introduction</h2>
 
-  <p>The Local Language Model (LLM) implemented in this project is designed to operate locally, ensuring that no sensitive data is leaked to the internet. The model utilizes the RAG architecture, which involves a retriever component for efficient information retrieval and a generator component for language generation.</p>
+  <p>This project integrates a Flask API into a WordPress site to perform sentiment analysis. Users can input text through the WordPress interface, which is then sent to the Flask API. The API processes the text to determine sentiment—whether it’s positive or negative—along with a confidence score. This integration enhances WordPress with dynamic data analysis capabilities, offering users immediate insights into the sentiment of their content or reviews.</p>
 
   <h2>Features</h2>
 
