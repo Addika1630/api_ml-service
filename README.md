@@ -2,11 +2,11 @@
 <html>
 <body>
 
-  <h1>RAG-based Local Language Model (LLM) Project</h1>
+  <h1>Integrating API in Wordpress Project</h1>
 
   <h2>Overview</h2>
 
-  <p>This project aims to implement a RAG-based Local Language Model (LLM) using a locally available dataset. The RAG (Retrieval-Augmented Generation) model combines the strengths of retriever and generator models, enabling more effective and contextually relevant language generation.</p>
+  <p>In this project, I integrated a Flask API into a WordPress site, enabling sentiment analysis. Users submit text through WordPress, which is sent to the Flask API for analysis, returning sentiment and confidence scores in real-time.</p>
 
   <h2>Introduction</h2>
 
