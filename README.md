@@ -15,11 +15,9 @@
   <h2>Features</h2>
 
   <ol>
-    <li><strong>RAG Architecture:</strong> Integration of the RAG architecture for improved language generation based on local data.</li>
-    <li><strong>Ingestor Component:</strong> The ingestor component ingests the documents' information into the chromaDB vector database.</li>
-    <li><strong>Data Security:</strong> No data is sent or leaked to the internet, ensuring the privacy and security of locally available datasets.</li>
-    <li><strong>Retriever Component:</strong> The retriever component efficiently retrieves relevant information from the local dataset.</li>
-    <li><strong>Generator Component:</strong> The generator component utilizes the retrieved information to generate contextually relevant language.</li>
+    <li><strong>app.py (Flask API):</strong> I developed an endpoint (/predict) that processes input text, predicts sentiment (positive/negative), and returns a confidence score. Added error handling for smooth interaction.</li>
+    <li><strong>app.php (WordPress Integration):</strong> Created a function to send text to the Flask API, retrieve the sentiment and confidence score, and display it under the “Analyze Sentiment” button in WordPress. Enhanced the interface for clarity.</li>
+    <li><strong>docker-compose.yaml:</strong> Configured Flask and WordPress as services with distinct containers, defined networking, and mapped ports to ensure the WordPress interface could communicate with the Flask API effectively.</li>
   </ol>
 
   <h2>Getting Started</h2>
