@@ -41,6 +41,7 @@
 
 4. **Access WordPress and Flask Services:**
    - Once the containers are running, open your web browser and navigate to:
+      - Sentiment Analysis: `http://localhost:8030/?page_id=5`
       - WordPress: `http://localhost:8030` (or the port specified in your `docker-compose.yaml`)
       - Flask API: `http://localhost:5000` (or the port specified in your `docker-compose.yaml` for Flask)
 
