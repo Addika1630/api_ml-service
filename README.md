@@ -20,23 +20,49 @@
     <li><strong>docker-compose.yaml:</strong> Configured Flask and WordPress as services with distinct containers, defined networking, and mapped ports to ensure the WordPress interface could communicate with the Flask API effectively.</li>
   </ol>
 
-  <h2>Getting Started</h2>
+  ## Getting Started
 
-  <p>Follow these steps to set up the API Integration in Wordpress:</p>
+1. **Clone the Repository:**
+    ```bash
+    git clone https://github.com/Addika1630/api_ml-service.git
+    ```
 
-  <ol>
-    <li><strong>Clone the Repository:</strong></li>
-    <pre><code>git clone https://github.com/Addika1630/api_ml-service.git</code></pre>
-    <li><strong>Proceed to the required directory:</strong></li>
-    <pre><code>cd api_ml-service/bash-wordpress-docker-setup
-    <li><p>Build and Start Services: Ensure Docker and Docker Compose are installed, then run:</p></li>
-      
-    <li><strong>Run the Ingestor:</strong></li>
-    <pre><code>python ingest.py</code></pre>
-    <li><strong>Run the Model:</strong></li>
-    <pre><code>streamlit run app.py</code></pre>
-    <li>Access the application in your web browser at <code>http://localhost:8501</code>)</li>
-  </ol>
+2. **Navigate to the Required Directory:**
+    ```bash
+    cd api_ml-service/bash-wordpress-docker-setup
+    ```
+
+3. **Build and Start Services:**
+   Ensure Docker and Docker Compose are installed, then run:
+    ```bash
+    sudo docker-compose up
+    ```
+   This command will build and start both the Flask and WordPress containers.
+
+4. **Access WordPress and Flask Services:**
+   - Once the containers are running, open your web browser and navigate to:
+      - WordPress: `http://localhost:8000` (or the port specified in your `docker-compose.yaml`)
+      - Flask API: `http://localhost:5000` (or the port specified in your `docker-compose.yaml` for Flask)
+
+5. **Testing the Integration:**
+   - In WordPress, use the integrated plugin or shortcode to send a sample request to the Flask API.
+   - You should see the output of the sentiment analysis directly on the WordPress page.
+
+6. **Stopping the Services:**
+   - To stop the running containers, press `CTRL+C` in the terminal where you ran `docker-compose up`.
+   - Alternatively, run:
+     ```bash
+     sudo docker-compose down
+     ```
+
+7. **Optional: Rebuilding the Containers:**
+   - If you've made changes to the code and need to rebuild the containers, run:
+     ```bash
+     sudo docker-compose up --build
+     ```
+
+This setup will ensure your Flask API and WordPress services are properly connected and running in Docker.
+
 
   <h2>Usage</h2>
 
