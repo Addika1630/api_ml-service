@@ -30,7 +30,7 @@
     <li><strong>Proceed to the required directory:</strong></li>
     <pre><code>cd api_ml-service/bash-wordpress-docker-setup
     <li><p>Build and Start Services: Ensure Docker and Docker Compose are installed, then run:</p></li>
-      <pre><code>sudo docker-compose up</code></pre>
+      
     <li><strong>Run the Ingestor:</strong></li>
     <pre><code>python ingest.py</code></pre>
     <li><strong>Run the Model:</strong></li>
