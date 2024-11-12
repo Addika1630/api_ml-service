@@ -22,15 +22,15 @@
 
   <h2>Getting Started</h2>
 
-  <p>Follow these steps to set up the RAG-based Local Language Model:</p>
+  <p>Follow these steps to set up the API Integration in Wordpress:</p>
 
   <ol>
     <li><strong>Clone the Repository:</strong></li>
-    <pre><code>git clone https://github.com/Addika1630/RAG_chat_docs.git</code></pre>
-    <li><strong>Install Dependencies:</strong></li>
-    <pre><code>cd RAG-LLM
-pip install -r requirements.txt</code></pre>
-    <li><p>Save the documents that need to be used to the <code>SOURCE_DOCUMENTS</code> folder.</p></li>
+    <pre><code>git clone https://github.com/Addika1630/api_ml-service.git</code></pre>
+    <li><strong>Proceed to the required directory:</strong></li>
+    <pre><code>cd api_ml-service/bash-wordpress-docker-setup
+    <li><p>Build and Start Services: Ensure Docker and Docker Compose are installed, then run:</p></li>
+      <pre><code>sudo docker-compose up</code></pre>
     <li><strong>Run the Ingestor:</strong></li>
     <pre><code>python ingest.py</code></pre>
     <li><strong>Run the Model:</strong></li>
