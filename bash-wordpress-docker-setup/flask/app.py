@@ -27,6 +27,7 @@ classifier.fit(X, training_labels)
 joblib.dump(classifier, 'sentiment_model.joblib')
 joblib.dump(vectorizer, 'vectorizer.joblib')
 
+
 @app.route('/predict', methods=['POST'])
 def predict():
     try:
